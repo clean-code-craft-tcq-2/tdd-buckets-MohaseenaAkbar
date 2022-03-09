@@ -3,7 +3,12 @@
 #include "test/catch.hpp"
 
 /*Test case for current sampling input*/
-TEST_CASE("Current sampling input test") {
+TEST_CASE("Current sampling input test for range 3-5") {
   int current_sample_array[5]={2,2,3,4,5};
   REQUIRE(sampling_Input(&current_sample_array,5) == 3);
+}
+
+TEST_CASE("Current sampling input test for range 10-12") {
+  int current_sample_array[5]={10,12,13,11,10};
+  REQUIRE(sampling_Input(&current_sample_array,5) == 4);
 }
