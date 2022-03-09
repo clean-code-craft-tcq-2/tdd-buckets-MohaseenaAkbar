@@ -1,7 +1,7 @@
 /*Code to capture chaging ranges*/
 #include "Current-sample.h"
 
-int sampling_Input(int* current_sample,int NoOfSample)
+Charge_Range sampling_Input(int* current_sample,int NoOfSample)
 {
   int Lower_cnt;
   /*processing input values*/
@@ -10,5 +10,5 @@ int sampling_Input(int* current_sample,int NoOfSample)
     if((current_sample[i]>=3)&&(current_sample[i]<=5))
      Lower_cnt++;
   }
-  retuen Lower_cnt;
+  return Lower_cnt;
 }
