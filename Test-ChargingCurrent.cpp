@@ -5,5 +5,5 @@
 /*Test case for current sampling input*/
 TEST_CASE("Current sampling input test") {
   int current_sample_array[5]={2,2,3,4,5};
-  REQUIRE(sampling_Input(&current_sample_array,5) > 0);
+  REQUIRE(sampling_Input(&current_sample_array,5) == 3);
 }
