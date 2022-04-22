@@ -10,7 +10,8 @@ TEST_CASE("sorting the Input array")
   int expected_sorted_arr[]={2,3,4,5,8,10,15};
   bool isArrayEqual=true;
   int Current_Sample,Sample_Size=5;
-  Sort_Current_Samples(&current_sample_array,Sample_Size);
+  /*Sort and verify the current samples*/
+  Sort_Current_Samples(&current_sample_arr,Sample_Size);
   for (int Current_Sample = 0; Current_Sample < Sample_Size; Current_Sample++) 
   {
       if (expected_sorted_arr[Current_Sample] != current_sample_arr[Current_Sample]) 
