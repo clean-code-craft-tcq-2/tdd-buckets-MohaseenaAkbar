@@ -8,7 +8,7 @@ TEST_CASE("sorting the Input array")
 {
   int current_sample_arr[]={2,8,10,15,3,4,5};
   int expected_sorted_arr[]={2,3,4,5,8,10,15};
-  boolean isArrayEqual=true;
+  bool isArrayEqual=true;
   int Current_Sample,Sample_Size=5;
   Sort_Current_Samples(&current_sample_array,Sample_Size);
   for (int Current_Sample = 0; Current_Sample < Sample_Size; Current_Sample++) 
