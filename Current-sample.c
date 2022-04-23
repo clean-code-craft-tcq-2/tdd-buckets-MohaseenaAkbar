@@ -8,7 +8,7 @@ void Sort_Current_Samples(int* current_sample_arr,int NoOfSample)
   {
       for (current_sample2 = 0 ; current_sample2 < size - current_sample1 - 1; current_sample2++)
       {
-         if (current_sample[counter1] > current_sample[counter1+1]) /* For decreasing order use < */
+         if (current_sample[current_sample2] > current_sample[current_sample2+1]) /* For decreasing order use < */
          {
              swap_var        = current_sample_arr[current_sample2];
              current_sample_arr[current_sample2]   = current_sample_arr[current_sample2+1];
